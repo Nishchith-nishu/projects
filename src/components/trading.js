@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Col, Container, Row, Card, Button } from "react-bootstrap";
 
-const Bulid = () => {
+const Bulidings = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const handleMouseEnter = (index) => {
@@ -17,12 +17,12 @@ const Bulid = () => {
     <Container fluid className="mt-3 mx-3">
       <Row>
         <h2>
-          <i>Popular Owner Properties</i>
+          Trending Societies near you
         </h2>
         {properties.map((property, index) => (
           <Col key={index}>
             <Card
-              style={{ width: '15rem', height: '21rem', position: 'relative' }}
+              style={{ width: '20rem', height: '21rem', position: 'relative' }}
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={handleMouseLeave}
             >
@@ -60,7 +60,7 @@ const Bulid = () => {
 
 const properties = [
   {
-    imageUrl: "https://img.staticmb.com/mbphoto/property/cropped_images/2024/Feb/08/Photo_h300_w450/71111891_2_PropertyImage1707391665895_300_450.jpg",
+    imageUrl: "https://img.staticmb.com/mbimages/project/Photo_h300_w450/2022/12/16/Project-Photo-125-Embassy-Lake-Terraces-Bangalore-5026406_345_1366_300_450.jpg",
     title: "3 BHK Flat",
     price: "₹56,000",
     area: "1578 sqft",
@@ -68,7 +68,7 @@ const properties = [
     status: "Ready to move",
   },
   {
-    imageUrl: "https://img.staticmb.com/mbphoto/property/cropped_images/2024/Mar/19/Photo_h300_w450/71939711_1_f6ef40af-737c-4893-9ce3-2b11f718680d_300_450.jpeg",
+    imageUrl: "https://img.staticmb.com/mbimages/project/Photo_h300_w450/2019/09/10/Project-Photo-53-Raintree-Boulevard-Bangalore-5086183_345_1366_300_450.jpg",
     title: "2 BHK Flat",
     price: "₹15,000",
     area: "1000 sqft",
@@ -76,23 +76,23 @@ const properties = [
     status: "Ready to move",
   },
   {
-    imageUrl: "https://img.staticmb.com/mbphoto/property/cropped_images/2024/Feb/08/Photo_h180_w240/71111891_2_PropertyImage1707391665895_180_240.jpg",
+    imageUrl: "https://img.staticmb.com/mbimages/project/Photo_h300_w450/Project-Photo-38-Nikoo-Homes-II-Bangalore-5086476_345_1366_300_450.jpg",
     title: "3 BHK Flat",
     price: "₹48,000",
     area: "1376 sqft",
     location: "Phase 1 Electronics City, Bangalore",
     status: "Ready to move"
   },
-  {
-    imageUrl: "https://img.staticmb.com/mbphoto/property/cropped_images/2024/Mar/17/Photo_h180_w240/71908817_4_hatsAppImage20240317at8.17.43PM2_180_240.jpeg",
-    title: "3 BHK Flat",
-    price: "₹30,000",
-    area: "1398 sqft",
-    location: "Sahakar Nagar, Bangalore",
-    status: "Ready to move"
-  }
+//   {
+//     imageUrl: "https://img.staticmb.com/mbphoto/property/cropped_images/2024/Mar/17/Photo_h180_w240/71908817_4_hatsAppImage20240317at8.17.43PM2_180_240.jpeg",
+//     title: "3 BHK Flat",
+//     price: "₹30,000",
+//     area: "1398 sqft",
+//     location: "Sahakar Nagar, Bangalore",
+//     status: "Ready to move"
+//   }
 ];
 
-export default Bulid;
+export default Bulidings;
 
 

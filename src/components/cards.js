@@ -4,9 +4,9 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 let Cards=()=>{
     return(
         <div>
-            <Container>
+            <Container fluid className="mx-3">
                 <Row>
-                <h2><i>Because you searched Bangalore</i></h2>
+                <h2 className="nav_bold1 mt-3"><i>Because you searched Bangalore</i></h2>
                     <Col >
     <Card className="card_color" style={{ width: '14rem' , height:'10rem' }}>
       <Card.Body>

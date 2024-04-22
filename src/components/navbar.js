@@ -164,8 +164,8 @@ function BasicExample() {
   ];
 
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container fluid className='bg-danger'>
+    <Navbar expand="lg" className=" nav_ffix bg-body-tertiary">
+      <Container fluid className='  bg-danger'>
         <Navbar.Brand href="#home" className='text-white'>Magicbricks</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -230,10 +230,13 @@ function BasicExample() {
               </Card>
             </NavDropdown>
           </Nav>
-          <Navbar.Text href="#home" className='text-white'>Post Property</Navbar.Text>
-          <Badge pill bg="warning" text="dark">
-            Free
-          </Badge>
+          <Navbar.Text href="#home" className='hea'><span className=' hlo bg-light'>Post Property 
+        </span>
+          </Navbar.Text>
+
+{/* <Navbar.Text href="#home" className=" mx-4 rounded-white-bg text-link-decoration"  style={{marginRight:'30px'}}>Post Property
+          <Badge bg="warning" text="dark" className="rounded-white-bg">FREE</Badge>
+          </Navbar.Text> */}
         </Navbar.Collapse>
       </Container>
     </Navbar>

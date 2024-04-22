@@ -3,7 +3,7 @@ import { Container ,Navbar ,Dropdown,Form,Button } from "react-bootstrap";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import AddHomeIcon from '@mui/icons-material/AddHome';
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
-import SearchIcon from '@mui/icons-material/Search';
+// import SearchIcon from '@mui/icons-material/Search';
 
 let Header=()=>{
     return(
@@ -11,15 +11,15 @@ let Header=()=>{
         <div>
             <Container className="col-4 mt-5 mb-5">
                 <h3>find your prefect <i><b>Rental home</b></i></h3>
-            </Container>
-            <Container className="d-flex justify-content-center ms-4">
-            <Navbar.Text href="#home" className='nav_text text-dark ms-4'>Buy</Navbar.Text>
-            <Navbar.Text href="#home" className='nav_text text-dark ms-4'>Rent</Navbar.Text>
-            <Navbar.Text href="#home" className='nav_text text-dark ms-4'>New Projects</Navbar.Text>
-            <Navbar.Text href="#home" className='nav_text text-dark ms-4'>PG</Navbar.Text>
-            <Navbar.Text href="#home" className='nav_text text-dark ms-4'>Plot</Navbar.Text>
-            <Navbar.Text href="#home" className='nav_text text-dark ms-4'>Commercial</Navbar.Text>
-            <Navbar.Text href="#home" className='nav_text text-dark ms-4'>Post Free Property Ad</Navbar.Text>
+            </Container >
+            <Container className=" d-flex justify-content-center ms-4 mb-3">
+            <Navbar.Text href="#home" className=' nav_bold text-dark ms-4'>Buy</Navbar.Text>
+            <Navbar.Text href="#home" className='nav_bold text-dark ms-4'>Rent</Navbar.Text>
+            <Navbar.Text href="#home" className='nav_bold text-dark ms-4'>New Projects</Navbar.Text>
+            <Navbar.Text href="#home" className='nav_bold text-dark ms-4'>PG</Navbar.Text>
+            <Navbar.Text href="#home" className='nav_bold text-dark ms-4'>Plot</Navbar.Text>
+            <Navbar.Text href="#home" className='nav_bold text-dark ms-4'>Commercial</Navbar.Text>
+            <Navbar.Text href="#home" className='nav_bold text-dark ms-4'>Post Free Property Ad</Navbar.Text>
             </Container>
 
             <div className="srchround  border   p-3">

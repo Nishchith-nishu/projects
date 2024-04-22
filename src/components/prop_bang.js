@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Col, Container, Row, Card, Button } from "react-bootstrap";
 
-const Bulid = () => {
+const Prop = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const handleMouseEnter = (index) => {
@@ -14,10 +14,10 @@ const Bulid = () => {
   };
 
   return (
-    <Container fluid className="mt-3 mx-3">
+    <Container fluid className="my-5 mx-3">
       <Row>
-        <h2>
-          <i>Popular Owner Properties</i>
+        <h2 className="mb-4">
+          Fresh Properties in Bangalore
         </h2>
         {properties.map((property, index) => (
           <Col key={index}>
@@ -93,6 +93,6 @@ const properties = [
   }
 ];
 
-export default Bulid;
+export default Prop;
 
 

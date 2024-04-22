@@ -57,4 +57,141 @@
   cursor: pointer;
 }
 
+.TextColor{
+  font-size: 13px;
+  color: blue;
+} 
+.Bgclr{
+  /* color: #61dafb; */
+  background-color:lightblue
 
+}
+.Bgclr2{
+  background-color: ffff;
+}
+.TextColor2{
+  /* color: black; */
+  /* font-weight: bold; */
+  font-size: 12px;
+}
+.MainCard{
+  border-radius: 10px;
+  height: 310px;
+}
+.MainCard:hover{
+  box-shadow: 3px 5px 2px lightslategray;
+  cursor: pointer;
+}
+
+.prop_serve:hover{
+  box-shadow: 3px 6px 2px lightslategray;
+
+}
+.Box_s:hover{
+  box-shadow: 5px 5px 5px 5px lightslategray;
+}
+.firstBadge{
+  margin-right: 0rem;
+}
+
+.badge{
+  position: relative;
+  left: 40px;
+}
+.badge_2{
+  display: none;
+}
+.bricks_1{
+  font-size: small;
+}
+.Bricks_4{
+  font-size:small;
+  cursor: pointer;
+}
+.vido_h{
+  height: 23rem;
+}
+.top{
+  margin-top: 5rem;
+}
+.vido_h:hover{
+  /* box-shadow: 2px 2px 5px 2px red ; */
+  border-top: solid 1px red;
+  box-shadow: 5px 5px 5px 5px lightslategray;
+}
+
+.nav_bold{
+  font-weight: bold;
+  color:gray;
+  font-style: italic;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+ }
+ .nav_bold::after{
+  content: '';
+  width:0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+.nav_bold:hover::after{
+  width: 100%;
+}
+.Bricks_11{
+  cursor: pointer;
+  color: #282c34;
+  text-decoration: none;
+}
+.ho{
+  cursor: pointer;
+}
+
+.snap{
+  margin-right: 100px;
+}
+.propert{
+  cursor: pointer;
+}
+.post{
+  background-color: bisque;
+  width: 77rem;
+  cursor: pointer;
+}
+.post1{
+  margin-top: 20px;
+  font-style: oblique;
+  font-size: x-large;
+  
+}
+.fon{
+  font-size: xx-large;
+}
+.font{
+  border: solid 1px yellow;
+  border-radius: 10px;
+  position: relative;
+  left: 60rem;
+  bottom: 3rem;
+  font-size:x-large;
+  margin: 2px;
+  font-style: normal;
+  margin: 2px 2px 2px 2px;
+  padding: 5px;
+  
+}
+.baa{
+  position: relative;
+  right: 40px;
+  font-size: smaller;
+  bottom: 1px;
+}
+
+.hlo{
+  /* border: solid 1px red; */
+  /* border-radius: 10px; */
+
+}
