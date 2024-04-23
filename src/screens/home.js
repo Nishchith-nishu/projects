@@ -7,7 +7,15 @@ import Header from "../components/header";
 import BasicExample from "../components/navbar";
 import Nav2 from "../components/navbar2";
 import Prop from "../components/prop_bang";
+import Service from "../components/society";
 import MediaCard from "../components/property";
+import Snap from "../components/snap";
+import Post from "../components/post";
+import Bulidings from "../components/trading";
+import Footer from "../components/footer";
+
+
+
 
 
 
@@ -27,9 +35,18 @@ const Home=()=>{
             <Agent></Agent>
             {/* <Property></Property> */}
             <MediaCard></MediaCard>
+            <Service></Service>
             <Advice></Advice>
             <Guid></Guid>
             <Prop></Prop>
+            <Bulidings></Bulidings>
+            
+            <Snap></Snap>
+            <Post></Post>
+            <Footer></Footer>
+            
+            
+           
             
              
             
