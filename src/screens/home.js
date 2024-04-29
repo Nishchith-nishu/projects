@@ -13,6 +13,7 @@ import Snap from "../components/snap";
 import Post from "../components/post";
 import Bulidings from "../components/trading";
 import Footer from "../components/footer";
+// import More_Details from "../components/more_detail";
 
 
 
@@ -43,7 +44,8 @@ const Home=()=>{
             
             <Snap></Snap>
             <Post></Post>
-            <Footer></Footer>
+           <Footer></Footer>
+           {/* <More_Details></More_Details> */}
             
             
            

@@ -5,6 +5,7 @@ import DescriptionIcon from '@mui/icons-material/Description';
 import CalculateIcon from '@mui/icons-material/Calculate';
 // import DescriptionIcon from '@mui/icons-material/Description';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
+import { Link } from "react-router-dom";
 
 const Advice=()=>{
     return(
@@ -31,10 +32,10 @@ Know the right value for your Property before you Buy.
 
     </Card.Text>
     {/* <Card.Link href="#">View all 20 Flats</Card.Link> */}
-    <Card.Link href="#" style={{ color: 'red', textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
+  <Link to="/deat"> <Card.Link href="#" style={{ color: 'red', textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
   Read more
   <span style={{ marginLeft: '5px' }}>&rarr;</span>
-</Card.Link>
+</Card.Link></Link>
 
 
   </Card.Body>

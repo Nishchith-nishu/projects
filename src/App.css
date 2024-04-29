@@ -200,3 +200,216 @@
 .bgm{
 background-color: dimgray;
 }
+
+
+.po{
+  background-color: white;
+  width: 64rem;
+  height: 40rem;
+  cursor: pointer;
+}
+.im{
+  width: 25rem;
+}
+.ima{
+  width: 7rem;
+  /* margin-top: 1rem; */
+  position: relative;
+  bottom: 422px;
+}
+.imp{
+  width: 7rem;
+  margin-left: 1rem;
+  /* margin-top: 1rem; */
+  position: relative;
+  bottom: 423px;
+}
+
+.ArrowButton1{
+  position:absolute;
+  right: 5%;
+  top: 528%;
+  border-radius: 20px;
+  height: 40px;
+  background-color: white;
+}
+.ArrowButton2{
+  position:absolute;
+ left: 4%;
+  top: 528%;
+  border-radius: 40px;
+  height: 40px;
+  background-color:white;
+}
+.ArrowButtonLeft {
+  position: absolute;
+  left: 7%;
+  top: 140%;
+  transform: translateY(-50%);
+  border-radius: 30px;
+  background-color:white;
+}
+.ArrowButtonLeft:hover{
+  background-color: red;
+  color: #282c34;
+}
+.ArrowButtonRight:hover{
+  background-color: red;
+  color: white;
+}
+
+.ArrowButtonRight {
+  position: absolute;
+  right: 5%;
+  top: 140%;
+  transform: translateY(-50%);
+  border-radius: 30px;
+  background-color:white;
+}
+.footmrgin{
+  color: #282c34;
+}
+.footmrgin2{
+  color: #282c34;
+}
+
+.ico{
+  background-color: lightgrey;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 10px;
+  position: relative;
+  bottom: 120px;
+}
+.carp{
+  position: relative;
+  left: 28rem;
+  bottom: 13rem;
+  font-size: small;
+}
+
+.carpt{
+  position: relative;
+  left: 38rem;
+  font-size: small;
+  bottom: 18rem;
+}
+.car{
+  position: relative;
+  left: 52rem;
+  font-size: small;
+  bottom: 22rem;
+}
+.fa{
+  position: relative;
+  left: 28rem;
+  bottom: 18rem;
+  font-size: small;
+}
+.fac{
+  position: relative;
+  left: 38rem;
+  font-size: small;
+  bottom: 21rem;
+}
+.faci{
+  position: relative;
+  left: 52rem;
+  font-size: small;
+  bottom: 25rem;
+}
+.ag{
+  position: relative;
+  left: 28rem;
+  bottom: 24rem;
+  /* font-size: small; */
+}
+
+.line {
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+  position: relative;
+  bottom: 18rem;
+}
+.own{
+  position: relative;
+  bottom: 22rem;
+  border-radius: 10px;
+  color: white;
+  padding: 5px;
+  background-color: red;
+  border: 1px solid red;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* .owne{
+  position: relative;
+  bottom: 22rem;
+  border-radius: 10px;
+  color: red;
+  padding: 5px;
+} */
+
+.owne {
+  position: relative;
+  bottom: 22rem;
+  border-radius: 10px;
+  color: red; /* Default text color */
+  background-color: #f8f9fa; /* Default background color */
+  border: 1px solid red;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color red 0.3s ease, color 0.3s ease; /* Smooth transition effect for both background color and text color */
+}
+
+.owne:hover {
+  background-color: red; /* Background color on hover */
+  color: white; /* Text color on hover */
+}
+
+.one{
+  position: relative;
+  bottom: 22rem;
+  left: 25rem;
+}
+
+.mo{
+  position: relative;
+  left: 14rem;
+}
+.mon{
+  position: relative;
+  left: 5rem;
+}
+.tu{
+  position: relative;
+  left: 7rem;
+}
+
+.tues{
+  position: relative;
+  left: 4rem;
+}
+.thu{
+  position: relative;
+  left: 0rem;
+}
+.fri{
+  position: relative;
+  left: 10rem;
+}
+.rip{
+  color: red;
+  position: relative;
+  left: 1rem;
+}
+
+.poo{
+  background-color: white;
+  width: 64rem;
+  height: 25rem;
+  cursor: pointer;
+}

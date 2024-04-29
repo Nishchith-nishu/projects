@@ -2,9 +2,8 @@
 
 import React, { useState } from 'react';
 import { Container, Nav, Navbar, NavDropdown, Card, Button, Badge } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 
-function BasicExample() {
+function Nav3() {
   const [showDropdown, setShowDropdown] = useState(false);
   const [showPrimeDropdown, setShowPrimeDropdown] = useState(false);
   const [showLoginDropdown, setShowLoginDropdown] = useState(false);
@@ -112,7 +111,7 @@ function BasicExample() {
                  <li> <Card.Link href="#">Searches</Card.Link></li>
                  <li> <Card.Link href="#">Recommendations</Card.Link></li>
                  <li> <Card.Link href="#">My Profile</Card.Link></li>
-            <Link to="/Log">  <li> <Card.Link href="#" className='btn btn-danger'>Login</Card.Link></li></Link>   
+                 <li> <Card.Link href="#" className='btn btn-danger'>Login</Card.Link></li>
                 </Card.Body>
               </Card>
             </NavDropdown>
@@ -130,6 +129,6 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default Nav3;
 
 
