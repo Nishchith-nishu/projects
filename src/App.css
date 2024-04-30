@@ -227,7 +227,7 @@ background-color: dimgray;
 
 .ArrowButton1{
   position:absolute;
-  right: 5%;
+  right: 4%;
   top: 528%;
   border-radius: 20px;
   height: 40px;
@@ -235,7 +235,7 @@ background-color: dimgray;
 }
 .ArrowButton2{
   position:absolute;
- left: 4%;
+ left: 1%;
   top: 528%;
   border-radius: 40px;
   height: 40px;
@@ -243,7 +243,7 @@ background-color: dimgray;
 }
 .ArrowButtonLeft {
   position: absolute;
-  left: 7%;
+  left: 1%;
   top: 140%;
   transform: translateY(-50%);
   border-radius: 30px;
@@ -260,7 +260,7 @@ background-color: dimgray;
 
 .ArrowButtonRight {
   position: absolute;
-  right: 5%;
+  right: 4%;
   top: 140%;
   transform: translateY(-50%);
   border-radius: 30px;
@@ -412,4 +412,18 @@ background-color: dimgray;
   width: 64rem;
   height: 25rem;
   cursor: pointer;
+}
+
+.tite{
+  border: solid 1px orange;
+  background-color: bisque;
+  border-radius: 10px;
+  font-size: large;
+}
+.clic{
+  padding:5px 100px 5px 100px;
+}
+.remove-border {
+  border: none;
+  border-top: 1px solid transparent;
 }

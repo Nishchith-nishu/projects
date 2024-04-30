@@ -9,7 +9,7 @@ import PersonIcon from '@mui/icons-material/Person';
 const View_detail = () => {
     return (
         <div>
-            <Container fluid className="mx-3 mt-5" style={{ width: "25rem" }}>
+            <Container className="mx-3 mt-5" style={{ width: "25rem" }}>
                 {/* <Container fluid className='mt-5 mx-3'> */}
                 {/* <h1>Bangalore Property Snapshot</h1> */}
                 <Card className="po">
