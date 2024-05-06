@@ -14,7 +14,7 @@ import Post from "../components/post";
 import Bulidings from "../components/trading";
 import Footer from "../components/footer";
 // import More_Details from "../components/more_detail";
-
+// import CombinedNavigation from "../components/navbar";
 
 
 
@@ -26,8 +26,9 @@ import Footer from "../components/footer";
 const Home=()=>{
     return(
         <div>
-            <BasicExample></BasicExample>
-            <Nav2/>
+             <BasicExample></BasicExample> 
+             <Nav2/> 
+            {/* <CombinedNavigation></CombinedNavigation> */}
             <hr className="mt-2"></hr>
             <Header/>
 

@@ -52,6 +52,7 @@ function Prop() {
                     View Details
                   </button></Link>
                 )}
+                {/* <button className='btn btn-danger'>Add wishlist</button> */}
               </Card.Body>
             </Card>
           </Col>
@@ -129,3 +130,131 @@ const properties = [
 ];
 
 export default Prop;
+// import React, { useState  } from 'react';
+// import { Container, Row, Col, Card } from 'react-bootstrap';
+// import { Link } from 'react-router-dom';
+// import { Typography, CardContent, CardMedia, CardActionArea, CardActions, Button } from '@mui/material';
+// import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
+// import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+// import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+// import axios from 'axios';
+// import usePagination from '../actions/pagi';
+// function Prop() {
+//     const [hoverIndex, setHoverIndex] = useState(-1);
+//     const cardsToShow = 4;
+//     const cards =  [
+//         {
+//             title: "2 BHK Flat",
+//             price: "1.25cr",
+//             size: "1413 sqft",
+//             location: "Whitefield Bangalore",
+//             image: "https://img.staticmb.com/mbphoto/property/cropped_images/2023/Jun/18/Photo_h180_w240/67579841_1_PropertyImage680-0493997235518_180_240.jpg",
+//             readytomove: "Ready to move"
+//         },
+//         {
+//             title: "3 BHK Flat",
+//             price: "84 Lac",
+//             size: "1150 sqft",
+//             location: "Whitefield, Bangalore",
+//             image: "https://img.staticmb.com/mbphoto/property/cropped_images/2023/Dec/26/Photo_h180_w240/70630851_1_PropertyImage645-708314894925_180_240.jpg",
+//             readytomove: "Under Construction"
+//         },
+//         {
+//             title: "3 BHK Flat",
+//             price: "1.26cr",
+//             size: "1149 sqft",
+//             location: "Whitefield Bangalore",
+//             image: "https://img.staticmb.com/mbphoto/property/cropped_images/2024/Mar/15/Photo_h180_w240/71874271_5_PropertyImage377-5241042579304_180_240.jpg",
+//             readytomove: "Under Construction"
+//         },
+//         {
+//             title: "2 BHK Flat",
+//             price: "1.18cr",
+//             size: "1140 sqft",
+//             location: "Whitefield Bangalore",
+//             image: "https://img.staticmb.com/mbphoto/property/cropped_images/2024/Feb/16/Photo_h180_w240/71421853_4_hatsAppImage20240212at10.59.56AM_180_240.jpeg",
+//             readytomove: "Under Construction"
+//         },
+//         {
+//             title: "2 BHK Flat",
+//             price: "1.40cr",
+//             size: "1918 sqft",
+//             location: "Whitefield Bangalore",
+//             image: "https://img.staticmb.com/mbphoto/property/cropped_images/2024/Mar/21/Photo_h180_w240/71972061_7_restigeparkgrovewhitefield_180_240.jpg",
+//             readytomove: "Under Construction"
+//         }
+//     ];
+//     const { index, handleNext, handlePrev } = usePagination(cards.length, cardsToShow);  // Assuming a custom hook for pagination
+   
+
+//     const addToCart = (property) => {
+//         const userId = localStorage.getItem("id") // This should be dynamically set based on the logged-in user
+//         console.log("Sending data:", { userId, items: [property] });
+//         axios.post('http://localhost:3002/api/cart', {
+//             userId,
+//             items: [property]
+//         })
+//         .then(response => {
+//             console.log('Cart updated:', response.data);
+//             // Optionally update local state to reflect changes
+//         })
+//         .catch(error => console.error('Failed to update cart:', error));
+//     };
+//     return (
+//         <Container className='mt-5 fresh-properties'>
+//             <Typography variant='h4' component="h1" className='header'>
+//                 Fresh Properties in Bangalore
+//             </Typography>
+//             <Row className='property-grid'>
+//                 {cards.slice(index, index + cardsToShow).map((card, cardIndex) => (
+//                     <Col key={cardIndex} md={3}>
+//                         <Card sx={{ maxWidth: 645 }} onMouseEnter={() => setHoverIndex(cardIndex)}
+//                               onMouseLeave={() => setHoverIndex(-1)}>
+//                             <CardActionArea>
+//                                 <CardMedia component="img" height="140" image={card.image} alt={`${card.title} image`} />
+//                                 <CardContent>
+//                                     <Typography gutterBottom variant="h6">
+//                                         {card.title}
+//                                     </Typography>
+//                                     <Typography variant="body1" color="text.secondary">
+//                                         <CurrencyRupeeIcon />
+//                                         <strong>{`${card.price} | ${card.size}`}</strong>
+//                                         <div>{card.location}</div>
+//                                         <div>{card.readytomove}</div>
+//                                     </Typography>
+//                                 </CardContent>
+//                             </CardActionArea>
+//                             <CardActions>
+//                                 {hoverIndex === cardIndex && (
+//                                     <>
+//                                         <Button variant="contained" color="primary" className="details-button">
+//                                             <Link to="/details">Read Details</Link>
+//                                         </Button>
+//                                         <Button variant="contained" color="secondary" className="cart-button"
+//                                                 onClick={() => addToCart(card)}>
+//                                             Add to Cart
+//                                         </Button>
+//                                     </>
+//                                 )}
+//                             </CardActions>
+//                         </Card>
+//                     </Col>
+//                 ))}
+//             </Row>
+//             <nav className='pagination-controls'>
+//                 {index > 0 && (
+//                     <Button className='arrow-button prev' onClick={handlePrev}>
+//                         <ArrowBackIcon />
+//                     </Button>
+//                 )}
+//                 {index < cards.length - cardsToShow && (
+//                     <Button className='arrow-button next' onClick={handleNext}>
+//                         <ArrowForwardIcon />
+//                     </Button>
+//                 )}
+//             </nav>
+//         </Container>
+//     );
+// }
+
+// export default Prop;

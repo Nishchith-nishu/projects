@@ -7,22 +7,26 @@ import View from './screens/view';
 import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';
 // import Log from './components/login';
 // import Login from './screens/log';
-import Log from './components/login';
+// import Log from './components/login';
+import UserLogin from './screens/userLogin';
+import UserSignup from './screens/userSignup';
 
 function App() {
   return (
     
       <Router>
      <Routes>
-      <Route path='/'>
+      {/* <Route path='/'> */}
      {/* <Home></Home> */}
-     <Route index element={<Home/>}/>
+     <Route path="*" element={<Home/>}/>
       <Route path="/View" element={<View/>}/>
       <Route path='/deat' element={<Home/>}/>
-      <Route path="/Log" element={<Log/>}/>
+      {/* <Route path="/Log" element={<Log/>}/> */}
+      <Route path='/Login' element={<UserLogin/>}/>
+      <Route path='/Signup' element={<UserSignup/>}/>
      
 
-      </Route>
+      {/* </Route> */}
   </Routes>
   </Router>
      

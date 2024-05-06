@@ -1,6 +1,6 @@
 
 
-import React, { useState } from 'react';
+import React, { useState ,useEffect} from 'react';
 import { Container, Nav, Navbar, NavDropdown, Card, Button, Badge } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
@@ -8,6 +8,8 @@ function BasicExample() {
   const [showDropdown, setShowDropdown] = useState(false);
   const [showPrimeDropdown, setShowPrimeDropdown] = useState(false);
   const [showLoginDropdown, setShowLoginDropdown] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // Add state to track login status
+  const [userName, setUserName] = useState(''); 
 
   const handleMouseEnter = () => {
     setShowDropdown(true);
@@ -32,7 +34,24 @@ function BasicExample() {
   const handleLoginMouseLeave = () => {
     setShowLoginDropdown(false);
   };
-
+  const handleLogout = () => {
+    // Perform logout actions (e.g., clear local storage, reset login status)
+    localStorage.removeItem("userName")
+    setIsLoggedIn(false);
+    setUserName('');
+  };
+  useEffect(() => {
+    const storedUserName = localStorage.getItem("userName");
+    if (storedUserName) {
+      setIsLoggedIn(true);
+      setUserName(storedUserName);
+    } else {
+      setIsLoggedIn(false);
+    }
+  }, []);
+  const getInitials = (name) => {
+    return name ? name.charAt(0).toUpperCase() : '';
+  };
   // Array of cities
   const cities = [
     'INDIA',
@@ -92,9 +111,55 @@ function BasicExample() {
                   <Button variant="danger">Join Now</Button>
                 </Card.Body>
               </Card>
-            </NavDropdown>
+            </NavDropdown> 
           </Nav>
           <Nav>
+          {isLoggedIn&&(
+            <NavDropdown
+              title={<div style={{ display: 'inline-flex', alignItems: 'center' }}>
+              <span style={{
+                backgroundColor: 'red', // Tomato color for the initial badge
+                color: 'white',
+               //  fontWeight: 'bold',
+                width: 30,
+                height: 30,
+                borderRadius: '50%',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                marginRight: 5
+              }}>
+                {getInitials(userName)}
+              </span>
+              {`Hi,${userName}`}
+            </div>}
+              id="basic-nav-dropdown"
+              onMouseEnter={handleLoginMouseEnter}
+              onMouseLeave={handleLoginMouseLeave}
+              show={showLoginDropdown}
+            >
+              <Card style={{ width: '18rem' }}>
+                <Card.Body>
+                  <Card.Title>My Activity</Card.Title>
+                  <li><Card.Link href="#">Requested Properties</Card.Link></li>
+                  <li><Card.Link href="#">Contacted Properties</Card.Link></li>
+                  <li><Card.Link href="#">Viewed Properties</Card.Link></li>
+                 <li> <Card.Link href="#">Shortlisted Properties</Card.Link></li>
+                 <li> <Card.Link href="#">Searches</Card.Link></li>
+                 <li> <Card.Link href="#">Recommendations</Card.Link></li>
+                 <li> <Card.Link href="#">My Profile</Card.Link></li>
+            <Link to="/Login">  <li> <Card.Link href="#" className='btn btn-danger'onClick={handleLogout}> logout</Card.Link></li></Link>   
+            {/* <NavDropdown.Item  style={{fontSize:'14px',color:'gray',display:'flex'}}>
+                 New to Magicbricks?
+
+               <Link to='/Signup'
+               >< Button   style={{color:'red',fontWeight:'bold',marginBottom:'10px',backgroundColor:'white',borderColor:'white'}}>Signup</ Button>
+               </Link>
+               </NavDropdown.Item> */}
+                </Card.Body>
+              </Card>
+            </NavDropdown>)}
+            {!isLoggedIn &&(
             <NavDropdown
               title="LOGIN"
               id="basic-nav-dropdown"
@@ -112,10 +177,17 @@ function BasicExample() {
                  <li> <Card.Link href="#">Searches</Card.Link></li>
                  <li> <Card.Link href="#">Recommendations</Card.Link></li>
                  <li> <Card.Link href="#">My Profile</Card.Link></li>
-            <Link to="/Log">  <li> <Card.Link href="#" className='btn btn-danger'>Login</Card.Link></li></Link>   
+            <Link to="/Login">  <li> <Card.Link href="#" className='btn btn-danger'>Login</Card.Link></li></Link>   
+            <NavDropdown.Item  style={{fontSize:'14px',color:'gray',display:'flex'}}>
+                 New to Magicbricks?
+
+               <Link to='/Signup'>< Button   style={{color:'red',fontWeight:'bold',marginBottom:'10px',backgroundColor:'white',borderColor:'white'}}>Signup</ Button>
+               </Link>
+               </NavDropdown.Item>
                 </Card.Body>
               </Card>
-            </NavDropdown>
+            </NavDropdown>)}
+        
           </Nav>
           <Navbar.Text href="#home" className='hea'><span className=' hlo bg-light'>Post Property 
         </span>

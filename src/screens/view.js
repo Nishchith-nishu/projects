@@ -7,9 +7,11 @@ import BasicExample from "../components/navbar";
 import Prop from "../components/prop_bang";
 import MediaCard from "../components/property";
 import Advice from "../components/advice";
+import { Container } from "react-bootstrap";
 const View=()=>{
     return(
-        <div>
+        <div style={{ maxWidth: "100%", overflowX: "hidden" }} >
+            {/* <Container> */}
         {/* <Nav3></Nav3> */}
       <BasicExample></BasicExample>
        <View_detail></View_detail>
@@ -18,7 +20,7 @@ const View=()=>{
        <Advice></Advice>
        <MediaCard></MediaCard>
        <Footer></Footer>
-       
+       {/* </Container> */}
         </div>
     )
 }
