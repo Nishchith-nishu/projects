@@ -147,7 +147,7 @@ function BasicExample() {
                  <li> <Card.Link href="#">Shortlisted Properties</Card.Link></li>
                  <li> <Card.Link href="#">Searches</Card.Link></li>
                  <li> <Card.Link href="#">Recommendations</Card.Link></li>
-                 <li> <Card.Link href="#">My Profile</Card.Link></li>
+                 <li> <Card.Link href="/UserDetail">My Profile</Card.Link></li>
             <Link to="/Login">  <li> <Card.Link href="#" className='btn btn-danger'onClick={handleLogout}> logout</Card.Link></li></Link>   
             {/* <NavDropdown.Item  style={{fontSize:'14px',color:'gray',display:'flex'}}>
                  New to Magicbricks?
@@ -176,7 +176,7 @@ function BasicExample() {
                  <li> <Card.Link href="#">Shortlisted Properties</Card.Link></li>
                  <li> <Card.Link href="#">Searches</Card.Link></li>
                  <li> <Card.Link href="#">Recommendations</Card.Link></li>
-                 <li> <Card.Link href="#">My Profile</Card.Link></li>
+                 <li> <Card.Link href="/UserDetail">My Profile</Card.Link></li>
             <Link to="/Login">  <li> <Card.Link href="#" className='btn btn-danger'>Login</Card.Link></li></Link>   
             <NavDropdown.Item  style={{fontSize:'14px',color:'gray',display:'flex'}}>
                  New to Magicbricks?
@@ -189,7 +189,8 @@ function BasicExample() {
             </NavDropdown>)}
         
           </Nav>
-          <Navbar.Text href="#home" className='hea'><span className=' hlo bg-light'>Post Property 
+          <Navbar.Text href="#home" className='hea'><span className=' hlo bg-light'><Link to="/post">Post Property    </Link>  
+
         </span>
           </Navbar.Text>
 

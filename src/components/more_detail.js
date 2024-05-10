@@ -195,12 +195,16 @@
 
 
 
-import { useState } from 'react';
+import { useState ,useEffect} from 'react';
 import { Container, Card, Button, Modal, Form, Row, Col } from 'react-bootstrap';
 import ReportIcon from '@mui/icons-material/Report';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const More_Details = () => {
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [userName, setUserName] = useState('');
+    const [userEmail, setUserEmail] = useState('');
+    const [userNumber, setUserNumber] = useState('');
     const [showModal, setShowModal] = useState(false);
     const [phoneNumber, setPhoneNumber] = useState('');
     const [countryCode, setCountryCode] = useState('91');
@@ -215,6 +219,20 @@ const More_Details = () => {
     const handleCountryCodeChange = (event) => {
         setCountryCode(event.target.value);
     };
+    useEffect(() => {
+        const storedUserName = localStorage.getItem("userName");
+        const storedUserEmail = localStorage.getItem("userEmail");
+        const storedUserNumber = localStorage.getItem("userNumber");
+      
+        if (storedUserName || storedUserEmail || storedUserNumber) {
+          setIsLoggedIn(true);
+          setUserName(storedUserName);
+          setUserEmail(storedUserEmail);
+          setUserNumber(storedUserNumber);
+        } else {
+          setIsLoggedIn(false);
+        }
+      }, []);
 
     return (
         <Container fluid className="mx-auto mt-3" style={{ maxWidth: "82rem" }}>
@@ -269,28 +287,29 @@ const More_Details = () => {
                         <Row>
                             <Col controlId="formBasicName">
                                 <Form.Label>Your Name</Form.Label>
-                                <Form.Control type="text" placeholder="Your name" autoFocus />
+                                <Form.Control type="text" placeholder="Your name" autoFocus  value={isLoggedIn ? userName : ''} />
                             </Col>
                         </Row>
                         <Row>
                             <Col controlId="formBasicEmail">
                                 <Form.Label>Email</Form.Label>
-                                <Form.Control type="email" placeholder="Email" />
+                                <Form.Control type="email" placeholder="Email" value={isLoggedIn ? userEmail : '' }/>
                             </Col>
                         </Row>
                         <Row>
                             <Col controlId="formBasicPhoneNumber">
                                 <Form.Label>Phone Number</Form.Label>
                                 <div className="d-flex">
-                                    <Form.Select className="me-2" value={countryCode} onChange={handleCountryCodeChange}>
+                                    <Form.Select className="me-2" value={countryCode}> 
+                                    {/* onChange={handleCountryCodeChange}> */}
                                         <option value="91">+91 (India)</option>
                                         <option value="1">+1 (United States)</option>
                                     </Form.Select>
                                     <Form.Control
                                         type="text"
                                         placeholder="Phone number"
-                                        value={phoneNumber}
-                                        onChange={handlePhoneNumberChange}
+                                        value={isLoggedIn ? userNumber : ''} 
+                                        // onChange={handlePhoneNumberChange}
                                     />
                                 </div>
                             </Col>
@@ -304,6 +323,4 @@ const More_Details = () => {
         </Container>
     );
 }
-
 export default More_Details;
-

@@ -10,6 +10,9 @@ import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';
 // import Log from './components/login';
 import UserLogin from './screens/userLogin';
 import UserSignup from './screens/userSignup';
+import ProofileDetail from './screens/profiledetail';
+import Sellproperty from './components/postproperty2';
+import ListProduct from './components/backfetch';
 
 function App() {
   return (
@@ -24,6 +27,9 @@ function App() {
       {/* <Route path="/Log" element={<Log/>}/> */}
       <Route path='/Login' element={<UserLogin/>}/>
       <Route path='/Signup' element={<UserSignup/>}/>
+      <Route path='/UserDetail' element={< ProofileDetail/>}/>
+      <Route path='/Sign' element={<Sellproperty/>}/>
+      <Route path='/post' element={<ListProduct/>}/>
      
 
       {/* </Route> */}

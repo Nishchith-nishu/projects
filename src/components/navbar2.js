@@ -412,8 +412,8 @@ function Nav2() {
 <NavDropdown.Item href="#action/3.1">For Owner</NavDropdown.Item> 
 <NavDropdown.Divider />
 
-<Link to="/PostProperty">
-<Nav.Link href="#action/3.4" style={{color:'black'}}>
+<Link to="/Sign">
+<Nav.Link  href="/Sellproperty" style={{color:'black'}}>
     Post Property <Badge bg="warning" text="dark" style={{borderRadius:'40px'}}>New</Badge>
 </Nav.Link></Link>
 <NavDropdown.Item href="https://www.magicbricks.com/ready-to-move-flats-in-bangalore-pppfs">Ready To Move</NavDropdown.Item>

@@ -260,7 +260,7 @@ background-color: dimgray;
 
 .ArrowButtonRight {
   position: absolute;
-  right: 4%;
+  right: 1%;
   top: 140%;
   transform: translateY(-50%);
   border-radius: 30px;

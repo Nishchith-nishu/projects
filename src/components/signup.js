@@ -71,6 +71,14 @@ function  Signup() {
           onChange={handleChange}
           placeholder="Password" />
       </Form.Group>
+      <Form.Group className="mb-3" controlId="formBasicnumber">
+        <Form.Label>Number</Form.Label>
+        <Form.Control type="phonenumber" 
+          name="userNumber"
+          value={formData.userNumber}
+          onChange={handleChange}
+          placeholder="number" />
+      </Form.Group>
       <Form.Group className="mb-3 " controlId="formBasicCheckbox" style={{fontSize:'12px'}}>
           <Form.Check type="checkbox" label="I agree to Magicbricks T&C, Privacy Policy, & Cookie Policy"  />
         </Form.Group>

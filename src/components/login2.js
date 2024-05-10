@@ -13,9 +13,14 @@ function  Login() {
     const [password, setPassword] = useState('');
     const [error, setError] = useState("");
     const navigate = useNavigate();
+    const [showModal, setShowModal] = useState(false);
+
+
+
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post("http://localhost:3002/Login", { email, password })
+        axios.post("http://localhost:3002/Login", { email, password, })
           .then(result => {
             if (result.data.message === "Login successful") {
               localStorage.setItem('token', result.data.token);
@@ -86,6 +91,9 @@ function  Login() {
           <Link to='/Signup' style={{color:'red'}}>SignUp</Link>
         </Form.Group> 
       </div>
+
+      <Button variant="link" onClick={() => setShowModal(true)}>Forgot Password?</Button>
+{/* <ForgotPasswordModal show={showModal} handleClose={() => setShowModal(false)} handleSendOtp={handleSendOtp} /> */}
     </Form>
     </Card>
     </div>
