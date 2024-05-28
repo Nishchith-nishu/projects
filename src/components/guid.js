@@ -109,8 +109,8 @@ const truncateText = (text, maxLength) => {
 
 let Guid = () => {
     return (
-        <Container fluid className="mt-5 mx-3">
-            <h1><i>Your Real Estate Guide</i></h1>
+        <Container fluid className="mt-3 mx-3">
+            <h2 className="sedan-sc-regular mb-2 "><i>Your Real Estate Guide</i></h2>
             <Row>
                 <Col xs={4}>
                     <Card className="vido_h me-2" style={{ width: '25rem' }}>

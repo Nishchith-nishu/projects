@@ -8,8 +8,8 @@ import { Container } from 'react-bootstrap';
 
 const MediaCard=()=> {
   return (
-    <Container fluid className="mx-3 mt-3" >
-        <h2>Property Services</h2><br></br>
+    <Container fluid className="mt-3 mx-3" >
+        <h2 className='sedan-sc-regular mb-2 '>Property Services</h2><br></br>
     <Grid container spacing={2} className='grids'>
       <Grid item xs={4}>
         <Card className='prop_serve' sx={{ maxWidth: 335 }}>

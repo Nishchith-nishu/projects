@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <>
     <footer className="footer">
-      <Container  fluid className=" bgm mx-3">
+      <Container  fluid className=" bgm mx-3 mt-4 mx-3">
         <Row className='mt-4'>
           <Col>
       <div  >

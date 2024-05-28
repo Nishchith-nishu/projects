@@ -4,8 +4,8 @@ import { Container,Col,Row,Card } from "react-bootstrap"
 
 let Service=()=>{
     return(
-        <Container fluid  className="service_name mt-5 mx-3">
-            <h1 className="mb-5"><i>Top Society Experts</i></h1>
+        <Container fluid  className="service_name mt-3 mx-3">
+            <h2 className="mb-5"><i className="sedan-sc-regular mb-2 ">Top Society Experts</i></h2>
             <Row>
                 <Col>
 <Card style={{ width: '18rem', borderRadius:"15px" }} className="Box_s">

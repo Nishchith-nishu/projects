@@ -3,7 +3,7 @@ import { Container,Badge } from 'react-bootstrap';
 
 function Post() {
   return (
-    <Container fluid className='mt-5 mx-3'>
+    <Container fluid className='mt-3 mx-3'>
         {/* <h1>Bangalore Property Snapshot</h1> */}
     <Card className='post'>
       <Card.Body className='post1'>Post your Property for <span className='fon'><b><i>Free</i></b></span><h6>

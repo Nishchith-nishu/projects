@@ -450,9 +450,9 @@ const ListProduct = () => {
   };
 
   return (
-    <div>
-      <h1>Owner Details</h1>
-      <Container fluid>
+    <div className=" mt-3 mx-3">
+      <h2 className="sedan-sc-regular mb-2">Owner Details</h2>
+      <Container fluid >
         <Row className="g-4" style={{ overflowX: "auto", whiteSpace: "nowrap" }}>
           {allProducts.slice(startIndex, startIndex + itemsPerPage).map((product) => (
             <Col key={product._id}>
@@ -486,6 +486,7 @@ const ListProduct = () => {
               <p><b>Price:</b> {selectedProduct.price}</p>
               <p><b>Square Feet:</b> {selectedProduct.sqft}</p>
               <p><b>Address:</b> {selectedProduct.address}</p>
+              {/* <p><b>City:</b> {selectedProduct.city}</p> */}
             </div>
           )}
         </Modal.Body>

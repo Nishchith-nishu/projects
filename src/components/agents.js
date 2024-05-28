@@ -5,8 +5,8 @@ function Agent() {
   return (
     < >
      
-    <Container fluid className="mx-3" style={{marginTop:'30px'}}>
-    <h2  >    MB Preferred Agents in Bangalore</h2>
+    <Container fluid className="mt-3 mx-3" style={{marginTop:'30px'}}>
+    <h2 className='sedan-sc-regular mb-2 '  >    MB Preferred Agents in Bangalore</h2>
     <Row> 
       <Col >
     <Card style={{ width: '16rem'  , margin:'20px 0 0 0'}} className='MainCard'>

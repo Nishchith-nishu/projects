@@ -186,6 +186,7 @@ const ListProduct = () => {
               <p><b>Price:</b> {selectedProduct.price}</p>
               <p><b>Square Feet:</b> {selectedProduct.sqft}</p>
               <p><b>Address:</b> {selectedProduct.address}</p>
+              {/* <p><b>City:</b>{selectedProduct.city}</p> */}
             </div>
           )}
         </Modal.Body>

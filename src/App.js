@@ -13,6 +13,13 @@ import UserSignup from './screens/userSignup';
 import ProofileDetail from './screens/profiledetail';
 import Sellproperty from './components/postproperty2';
 import ListProduct from './components/backfetch';
+// import ForgotPassword from './components/forgot';
+// import ResetPassword from './components/reset';
+import ForgotPassword from './actions/forgotemail';
+import Buyproducts from './components/buyproducts';
+import AgentCard from './components/topagent';
+
+
 
 function App() {
   return (
@@ -30,6 +37,12 @@ function App() {
       <Route path='/UserDetail' element={< ProofileDetail/>}/>
       <Route path='/Sign' element={<Sellproperty/>}/>
       <Route path='/post' element={<ListProduct/>}/>
+      <Route path='/forgot-password' element={<ForgotPassword/>}/>
+      <Route path='/buy' element={<Buyproducts/>}/>
+      <Route path='/top' element={<AgentCard/>}/>
+      {/* <Route path="/forgot-password" element={<ForgotPassword />}></Route>
+
+      <Route path="/reset_password/:id/:token" element={<ResetPassword />}></Route> */}
      
 
       {/* </Route> */}

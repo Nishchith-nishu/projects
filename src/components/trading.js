@@ -16,7 +16,7 @@ const Bulidings = () => {
   return (
     <Container fluid className="mt-3 mx-3">
       <Row>
-        <h2>
+        <h2 className="sedan-sc-regular mb-2 ">
           Trending Societies near you
         </h2>
         {properties.map((property, index) => (

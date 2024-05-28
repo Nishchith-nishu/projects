@@ -10,8 +10,9 @@ import { Link } from "react-router-dom";
 const Advice=()=>{
     return(
         <div>
-        <Container fluid className="mt-5 mx-3" >
-        <h1 className="mb-5"><i>Advice & Tools</i></h1>
+        <Container fluid className="mt-3 mx-3" >
+
+        <h2 className="sedan-sc-regular  mb-3"><i>Advice & Tools</i></h2>
             <Row>
                 <Col>
                 {/* <div> */}

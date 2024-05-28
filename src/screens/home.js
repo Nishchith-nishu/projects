@@ -13,6 +13,9 @@ import Snap from "../components/snap";
 import Post from "../components/post";
 import Bulidings from "../components/trading";
 import Footer from "../components/footer";
+import Caros from "../components/caros";
+import MagicHomes from "../components/newla";
+// import Searchbar from "../components/searchbar";
 // import More_Details from "../components/more_detail";
 // import CombinedNavigation from "../components/navbar";
 
@@ -31,10 +34,14 @@ const Home=()=>{
             {/* <CombinedNavigation></CombinedNavigation> */}
             <hr className="mt-2"></hr>
             <Header/>
+            {/* <Searchbar></Searchbar> */}
 
             <Cards></Cards>
             <Bulid></Bulid>
+            <Caros></Caros>
+
             <Agent></Agent>
+            <MagicHomes></MagicHomes>
             {/* <Property></Property> */}
             <MediaCard></MediaCard>
             <Service></Service>

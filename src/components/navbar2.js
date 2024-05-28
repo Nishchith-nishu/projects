@@ -173,7 +173,7 @@ function Nav2() {
 <NavDropdown.Item href="#action/3.1"> Popular Choices</NavDropdown.Item> 
 <NavDropdown.Divider />
 
-<NavDropdown.Item href="https://www.magicbricks.com/ready-to-move-flats-in-bangalore-pppfs">Ready To Move</NavDropdown.Item>
+<NavDropdown.Item href="/buy">Ready To Move</NavDropdown.Item>
 
 <NavDropdown.Item href="#action/3.2"> Owner Properties
 </NavDropdown.Item> 
@@ -291,7 +291,7 @@ function Nav2() {
 <NavDropdown.Item href="#action/3.1"> Popular Choices</NavDropdown.Item> 
 <NavDropdown.Divider />
 
-<NavDropdown.Item href="https://www.magicbricks.com/ready-to-move-flats-in-bangalore-pppfs">Ready To Move</NavDropdown.Item>
+<NavDropdown.Item href="#">Ready To Move</NavDropdown.Item>
 
 <NavDropdown.Item href="#action/3.2"> Owner Properties
 </NavDropdown.Item> 
@@ -416,7 +416,7 @@ function Nav2() {
 <Nav.Link  href="/Sellproperty" style={{color:'black'}}>
     Post Property <Badge bg="warning" text="dark" style={{borderRadius:'40px'}}>New</Badge>
 </Nav.Link></Link>
-<NavDropdown.Item href="https://www.magicbricks.com/ready-to-move-flats-in-bangalore-pppfs">Ready To Move</NavDropdown.Item>
+<NavDropdown.Item href="*">Ready To Move</NavDropdown.Item>
 
 <NavDropdown.Item href="#action/3.2"> Owner Properties
 </NavDropdown.Item> 

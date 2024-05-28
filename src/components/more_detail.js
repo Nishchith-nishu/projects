@@ -238,7 +238,7 @@ const More_Details = () => {
         <Container fluid className="mx-auto mt-3" style={{ maxWidth: "82rem" }}>
             <Card className="poo">
                 <Card.Body>
-                    <h3 className="text-center"><b>More Details</b></h3>
+                    <h3 className="sedan-sc-regular  text-center"><b>More Details</b></h3>
                     <div className="mb-3">
                         <span className="me-3">Rental Value:</span>
                         <span className="mon"><b>₹40,000 | ₹5,000</b> Monthly Maintenance</span>
