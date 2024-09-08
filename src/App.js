@@ -18,9 +18,7 @@ import ListProduct from './components/backfetch';
 import ForgotPassword from './actions/forgotemail';
 import Buyproducts from './components/buyproducts';
 import AgentCard from './components/topagent';
-
-
-
+import TextControlsExample from './components/aku';
 function App() {
   return (
     
@@ -40,6 +38,7 @@ function App() {
       <Route path='/forgot-password' element={<ForgotPassword/>}/>
       <Route path='/buy' element={<Buyproducts/>}/>
       <Route path='/top' element={<AgentCard/>}/>
+      <Route path ="/new" element ={<TextControlsExample/>}/>
       {/* <Route path="/forgot-password" element={<ForgotPassword />}></Route>
 
       <Route path="/reset_password/:id/:token" element={<ResetPassword />}></Route> */}

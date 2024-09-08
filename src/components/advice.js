@@ -33,7 +33,7 @@ Know the right value for your Property before you Buy.
 
     </Card.Text>
     {/* <Card.Link href="#">View all 20 Flats</Card.Link> */}
-  <Link to="/deat"> <Card.Link href="#" style={{ color: 'red', textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
+  <Link to="/new"> <Card.Link href="#" style={{ color: 'red', textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
   Read more
   <span style={{ marginLeft: '5px' }}>&rarr;</span>
 </Card.Link></Link>
